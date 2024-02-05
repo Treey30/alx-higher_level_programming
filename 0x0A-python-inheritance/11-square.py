@@ -1,13 +1,10 @@
 #!/usr/bin/python3
-"""Defines Rectangle module."""
-Rectangle = __import__('9-rectangle').Rectangle
+"""
+    This module returns the list of available attributes
+    and methods of an object
+"""
 
 
-class Square(Rectangle):
-    """class body."""
-
-    def __init__(self, size):
-
-        self.integer_validator("size", size)
-        super().__init__(size, size)
-        self.__size = size
+def lookup(obj):
+    """To looks out for all attributes and methods of an object"""
+    return dir(obj)
